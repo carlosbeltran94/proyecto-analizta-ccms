@@ -1,0 +1,120 @@
+<! DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title> Pagina Web </title>
+        <style>
+      body {
+  background-color: lightblue;
+           }
+
+       {
+      color: white;
+      text-align: center;
+       }
+
+    p {
+       font-family: verdana;
+       font-size: 20px;
+      }  
+         </style>
+     
+       
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="estilo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     
+    </head>
+
+
+ <body>
+
+<img src="imagen/2.png">
+     <br>
+<h1>OVERTIME</h1>
+    <P>En la siguiente pagina puede realizar los reportes de las horas extras, por favor ingrese toda la informacion requerida en el siguiente formulario. </P>
+     
+     
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="container">
+  <form>
+   <div class="form-group">
+    <p>
+      <label>documento:</label> <br>
+      <input id="documento" class="form-control" type="number"required="required"><br>
+    </p>
+     <p>
+      <label>nombre completo:</label> <br>
+      <input id="nombre" class="form-control" type="text"required="required"><br>
+    </p>
+    <p>
+      <label>fecha inicio:</label> <br>
+      <input id="fechainicio" class="form-control" type="date"required="required"min="2019-01-01"
+                                                         max="2019-12-30" step="2"><br>
+    </p>
+
+    <p>
+      <label>fecha fin:</label> <br>
+      <input id="fechafin" class="form-control" type="date"required="required"min="2019-01-01"
+                                                         max="2019-12-30" step="2"><br>
+    </p>
+
+ <p>
+      <label>hora de inicio turno:</label> <br>
+      <input id="horainicio" class="form-control" type="time"required="required"min="00:00"
+                                 max="22:00" step="6600"><br>
+    
+ </p>
+ <p>
+      <label>hora fin de turno:</label> <br>
+      <input id="horafin" class="form-control" type="time"required="required"min="00:00"
+                                 max="22:00" step="6600"><br>
+ </p>
+ <p>
+      <label>hora de inicio extra:</label> <br>
+      <input id="horainicioex" class="form-control" type="time"required="required"min="00:00"
+                                 max="22:00" step="6600"><br>
+  </p>  
+ <p>
+      <label>hora fin extra:</label> <br>
+      <input id="horafinex" class="form-control" type="time"required="required"min="00:00"
+                                 max="22:00" step="6600"><br>
+   </p> 
+       
+      <p>
+      <label>motivo hora extra:</label> <br>
+      <input id="motivo" class="form-control" type="text"required="required"><br>
+    </p>
+
+    <button id="adicionar" class="btn btn-success" type="button">registrar</button>
+  </div>
+</form>
+    
+
+  <p>registro de datos:
+  <div id="adicionados"></div>
+</p>
+<table  id="mytable" class="table table-bordered table-hover ">
+  <tr>
+    <th>documento</th>
+    <th>nombre completo</th>
+    <th>fecha inicio</th>
+    <th>fecha fin</th>
+    <th>hora inicio de turno</th>
+    <th>hora fin de turno</th>
+    <th>hora inicio extra</th> 
+    <th>hora fin extra</th> 
+    <th>motivo</th> 
+    <th>eliminar</th>  
+  </tr>
+</table>
+
+</div>                          
+       
+                                          
+                                          <script src="tabla/tabla.js"></script>
+ </body>
+
+</html>
+
